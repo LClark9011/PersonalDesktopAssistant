@@ -5,19 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PersonalDesktopAssistant"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800"
+        AllowsTransparency="True" WindowStyle="None">
     <Grid>
         <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
             <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
+            <RowDefinition Height="10" />
             <RowDefinition Height="*" />
+            <RowDefinition Height="10" />
         </Grid.RowDefinitions>
-        <TabControl TabStripPlacement="Right" >
+        <TabControl TabStripPlacement="Right" Grid.Column="1" Grid.Row="1">
             <TabItem Content="Reminders" Header="Reminders" Width="200" Height="50" FontSize="24" />
             <TabItem Content="Calendar" Header="Calender" Width="200" Height="50" FontSize="24" />
             <TabItem Content="Timer" Header="Timer" Width="200" Height="50" FontSize="24" />
         </TabControl>
     </Grid>
- 
 </Window>
